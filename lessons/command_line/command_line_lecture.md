@@ -118,7 +118,9 @@ echo "HELLO WORLD" > test_file.txt
 Now nothing shows up on the screen. List the files and see if you can tell
 why.
 
-> Hint: we learned how to list all the files up above.
+```bash
+ls
+```
 
 The greater than says, "put that output into the following file instead."
 
@@ -143,8 +145,9 @@ installed. Just swap in `wget` any place you see `curl`)_
 This prints the data directly to stdout and we can see the whole dataset.
 Nice. 
 
-> Let's save the output of the `curl` command to a file called `data.txt`. How
-would we do that?
+``` bash
+curl https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data > data.txt
+```
 
 Now that we have the data file, let's learn how to manipulate files.
 
@@ -191,7 +194,7 @@ We can get even fancier by adding a second flag
 ls -lh
 ```
 
-> What changed?
+File size is changed to kilobytes
 
 If instead copying we just want to change the name of a file, we can do:
 
@@ -234,7 +237,7 @@ If we want to delete a whole directory, we have to do exactly the same thing.
 directory, so it will only delete whole directories if you give it a proper
 flag.
 
-```basg
+```bash
 rm -r test_directory
 rm -r test_directory2
 ls
