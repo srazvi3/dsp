@@ -54,6 +54,7 @@ I installed Python 3 for the reasons that it is the version that is the version 
 In the Terminal:
 
 `python3 --version`
+
 I am using Python version 3.8.3 in the Jupyter Notebook
 
  
